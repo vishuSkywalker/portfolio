@@ -37,11 +37,11 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 px-6 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-white/80 backdrop-blur-sm'
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto py-4">
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection('home')}
