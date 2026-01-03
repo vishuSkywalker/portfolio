@@ -35,18 +35,26 @@ export function About() {
           <div className="space-y-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-slate-600 text-lg leading-relaxed">
-                I'm a passionate Full Stack Developer with over 5 years of experience in building
-                web applications. I specialize in React, TypeScript, and Node.js, and I'm always
-                eager to learn new technologies and tackle challenging problems.
+                Senior HubSpot CMS Developer | 6+ Years Exp | Project Lead & Mentor | Specializing in High-Performance HubL Themes, HubDB & API Integrations
+
+I am a Senior HubSpot CMS Developer with over 6 years of experience architecting scalable, high-performance websites for global enterprise clients. My expertise lies in bridging the gap between complex business requirements and technical execution, turning custom designs into pixel-perfect, data-driven HubSpot realities.
+
+Currently, I serve as a Project Lead at The Webplant Pvt. Ltd., where I oversee the end-to-end delivery of concurrent high-priority projects. I don’t just write code; I build systems. From engineering complex HubDB filtering logic to developing custom API connectors that save clients 20+ hours of manual labor monthly, I focus on solutions that drive efficiency and growth.
+
+Core Competencies:
+
+HubSpot Architecture: Advanced HubL, HubDB, Custom Objects, CRM Objects, and Modular Theme Development.
+
+Front-End Engineering: React.js, JavaScript (ES6+), Tailwind CSS, and performance optimization (consistently achieving 90+ Lighthouse scores).
+
+Leadership: Mentoring developer teams, establishing code standards, and managing client relationships for 10+ enterprise accounts.
+
+I am passionate about clean code, accessibility (WCAG), and pushing the boundaries of what the HubSpot CMS can do.
               </p>
               <p className="text-slate-600 text-lg leading-relaxed">
                 My journey in web development started with a curiosity about how websites work,
                 and it has evolved into a career focused on creating exceptional digital experiences.
                 I believe in writing clean, maintainable code and designing interfaces that users love.
-              </p>
-              <p className="text-slate-600 text-lg leading-relaxed">
-                When I'm not coding, you can find me contributing to open-source projects,
-                reading tech blogs, or exploring new coffee shops.
               </p>
             </div>
 
