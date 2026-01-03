@@ -107,6 +107,8 @@ export function About() {
             <div className="mt-12 text-center">
               <a
                 href="#"
+                aria-label='Download Resume'
+                aria-labelledby='Download Resume'
                 onClick={(e) => {
                   e.preventDefault();
                   window.open('https://docs.google.com/document/d/1UM7OOju50bRB5EexFi5zeafHgGeG624cl8z5zdmsWTs/edit?usp=sharing', '_blank');

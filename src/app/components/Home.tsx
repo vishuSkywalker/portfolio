@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import bannerImage from '@/public/assets/1767086661908.jpg';
 
 export function Home() {
   const scrollToSection = (sectionId: string) => {
@@ -103,9 +104,9 @@ export function Home() {
               <div className="absolute inset-0 bg-blue-600 rounded-2xl transform rotate-6"></div>
               <div className="relative bg-white p-2 rounded-2xl shadow-2xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwxfHx8fDE3Njc0MjE4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src={bannerImage}
                   alt="Professional portrait"
-                  className="rounded-xl w-full max-w-md object-cover aspect-square"
+                  className="rounded-xl w-full max-w-md object-cover aspect-square object-top"                  
                 />
               </div>
             </div>
