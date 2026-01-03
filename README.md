@@ -23,59 +23,6 @@ A modern, responsive portfolio website built with React, TypeScript, React Route
 - **Sonner**: Toast notifications
 - **Vite**: Fast build tool and dev server
 
-## SEO Optimization
-
-### Meta Tags
-
-Add to your `index.html`:
-
-```html
-<head>
-  <meta name="description" content="Your Name - Full Stack Developer Portfolio">
-  <meta name="keywords" content="web developer, react developer, portfolio, your name">
-  <meta name="author" content="Your Name">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourwebsite.com/">
-  <meta property="og:title" content="Your Name - Full Stack Developer">
-  <meta property="og:description" content="Portfolio showcasing my web development projects">
-  <meta property="og:image" content="https://yourwebsite.com/preview-image.jpg">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://yourwebsite.com/">
-  <meta property="twitter:title" content="Your Name - Full Stack Developer">
-  <meta property="twitter:description" content="Portfolio showcasing my web development projects">
-  <meta property="twitter:image" content="https://yourwebsite.com/preview-image.jpg">
-</head>
-```
-
-### Sitemap
-
-Create a `public/sitemap.xml`:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://yourwebsite.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-</urlset>
-```
-
-### robots.txt
-
-Create a `public/robots.txt`:
-
-```
-User-agent: *
-Allow: /
-Sitemap: https://yourwebsite.com/sitemap.xml
-```
-
 ## Performance Optimization
 
 - Images are lazy-loaded using the `ImageWithFallback` component
@@ -105,8 +52,8 @@ This project is open source and available under the MIT License.
 
 For questions or suggestions, please reach out:
 - Email: your.email@example.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- GitHub: [Your GitHub](https://github.com/yourusername)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/vishumaurya78285)
+- GitHub: [Your GitHub](https://github.com/vishuSkywalker)
 
 ---
 
