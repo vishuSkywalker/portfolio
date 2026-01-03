@@ -20,7 +20,7 @@ export default function App() {
         </main>
         <footer className="bg-slate-900 text-white py-8">
           <div className="container mx-auto px-6 text-center">
-            <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Vishal Maurya. All rights reserved.</p>
           </div>
         </footer>
       </div>
