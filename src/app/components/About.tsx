@@ -38,7 +38,7 @@ export function About() {
           <div className="space-y-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-slate-600 text-lg leading-relaxed">
-                Senior HubSpot CMS Developer | 6+ Years Exp | Project Lead &
+                Senior HubSpot CMS Developer | 7+ Years Exp | Project Lead &
                 Mentor | Specializing in High-Performance HubL Themes, HubDB &
                 API Integrations I am a Senior HubSpot CMS Developer with over 6
                 years of experience architecting scalable, high-performance
