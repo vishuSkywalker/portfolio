@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import bannerImage from '@/public/assets/Gemini_Generated_Image_7ftoh17ftoh17fto.png';
+import bannerImage from '@/public/assets/Gemini_Generated_Image.png';
 
 export function Home() {
   const scrollToSection = (sectionId: string) => {
@@ -37,7 +37,7 @@ export function Home() {
 
             <p className="text-lg text-slate-600 max-w-lg">
               Passionate about creating beautiful, functional, and user-friendly web applications.
-              I specialize in modern web technologies and love bringing ideas to life.
+              I specialize in modern web technologies and love bringing ideas to life
             </p>
 
             {/* Skills Tags */}
