@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import bannerImage from '@/public/assets/Gemini_Generated_Image_7ftoh17ftoh17fto.png';
+import bannerImage from '@/public/assets/Gemini_Generated_Image.png';
 
 export function Home() {
   const scrollToSection = (sectionId: string) => {

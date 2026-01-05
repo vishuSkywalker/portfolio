@@ -58,8 +58,7 @@ export function About() {
                 (consistently achieving 90+ Lighthouse scores). Leadership:
                 Mentoring developer teams, establishing code standards, and
                 managing client relationships for 10+ enterprise accounts. I am
-                passionate about clean code, accessibility (WCAG), and pushing
-                the boundaries of what the HubSpot CMS can do.
+                passionate about clean code, accessibility (WCAG).
               </p>
               <p className="text-slate-600 text-lg leading-relaxed">
                 My journey in web development started with a curiosity about how
