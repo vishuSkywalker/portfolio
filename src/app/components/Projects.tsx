@@ -17,7 +17,7 @@ export function Projects() {
       id: 1,
       title: 'Grocery App',
       description: 'A full-featured e-commerce platform with product management, shopping cart. Built with modern web technologies for optimal performance.',
-      technologies: ['JavaScript', 'React', 'Redux', 'CSS'],
+      technologies: ['JavaScript', 'React', 'Redux',],
       imageUrl: 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1374&auto=format&fit=crop',
       liveUrl: 'https://grocery-app-nu-nine.vercel.app',
       githubUrl: 'https://github.com/vishuSkywalker/grocery_app'
@@ -26,20 +26,20 @@ export function Projects() {
       id: 2,
       title: 'Task Management App',
       description: 'A simple todo app with Redux for state management, allowing users to create, edit, and delete tasks. Features a clean UI and responsive design for seamless use across devices.',
-      technologies: ['JavaScript', 'React', 'Redux', 'CSS'],
+      technologies: ['JavaScript', 'React', 'Redux',],
       imageUrl: 'https://images.unsplash.com/photo-1723505613384-b55168b80568?q=80&w=1376&auto=format&fit=crop',
       liveUrl: 'https://todo-with-redux-xi.vercel.app',
       githubUrl: 'https://github.com/vishuSkywalker/todo-with-redux'
     },
     {
       id: 3,
-      title: 'Tic Tac Toe Game',
-      description: 'A classic Tic Tac Toe game built with React and TypeScript. Features a clean UI, responsive design, and game state management.',
-      technologies: ['React', 'JavaScript', 'Redux', 'CSS'],
-      imageUrl: 'https://images.unsplash.com/photo-1668901382969-8c73e450a1f5?q=80&w=880&auto=format&fit=crop',
-      liveUrl: 'https://tic-tac-toe-redux.vercel.app',
-      githubUrl: 'https://github.com/vishuSkywalker/tic-tac-toe-redux'
-    }
+      title: 'Expense Tracker',
+      description: 'An expense tracking application that helps users monitor their spending habits. Built with React and Redux for efficient state management and a smooth user experience.',
+      technologies: ['React', 'JavaScript', 'Redux', 'Chart.js',],
+      imageUrl: 'https://images.unsplash.com/photo-1707157281599-d155d1da5b4c?q=80&w=1470&auto=format&fit=crop',
+      liveUrl: 'https://expense-tracker-lime-eight-22.vercel.app',
+      githubUrl: 'https://github.com/vishuSkywalker/expense-tracker'
+    },
   ];
 
   return (

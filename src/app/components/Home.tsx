@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import bannerImage from '@/public/assets/1767086661908.jpg';
+import bannerImage from '@/public/assets/Gemini_Generated_Image_7ftoh17ftoh17fto.png';
 
 export function Home() {
   const scrollToSection = (sectionId: string) => {
@@ -106,7 +106,7 @@ export function Home() {
                 <ImageWithFallback
                   src={bannerImage}
                   alt="Professional portrait"
-                  className="rounded-xl w-full max-w-md object-cover aspect-square object-top"                  
+                  className="h-600 rounded-xl w-full max-w-md object-cover aspect-square object-top"                  
                 />
               </div>
             </div>
