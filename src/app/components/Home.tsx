@@ -37,7 +37,7 @@ export function Home() {
 
             <p className="text-lg text-slate-600 max-w-lg">
               Passionate about creating beautiful, functional, and user-friendly web applications.
-              I specialize in modern web technologies and love bringing ideas to life
+              I specialize in modern web technologies and love bringing ideas to life.
             </p>
 
             {/* Skills Tags */}
