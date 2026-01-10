@@ -87,7 +87,7 @@ export function Home() {
   return (
     <motion.section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden" // Added relative and overflow-hidden
+      className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -138,7 +138,7 @@ export function Home() {
                 Front End Developer
               </motion.p>
             </div>
-
+            
             <motion.p
               className="text-lg text-slate-600 max-w-lg"
               initial={{ opacity: 0 }}

@@ -138,7 +138,6 @@ export function About() {
   ];
 
   const frontendSkills = [
-    // Your provided skills
     "React",
     "TypeScript",
     "Next.js",
@@ -148,11 +147,9 @@ export function About() {
     "HubL",
     "HTML5",
     "CSS3",
-
-    // Added from your resume
-    "JavaScript (ES6+)", // [cite: 6, 9]
-    "Bootstrap", // [cite: 9]
-    "Responsive Design", // [cite: 9]
+    "JavaScript (ES6+)",
+    "Bootstrap",
+    "Responsive Design",
     "Component Architecture",
     "DOM Manipulation",
     "WCAG Accessibility",
@@ -287,7 +284,7 @@ export function About() {
           </motion.div>
         </div>
 
-        {/* Scrolling Skills Section - Viral Element */}
+        {/* Scrolling Skills Section */}
         <motion.div
           className="mt-24 space-y-8"
           initial={{ opacity: 0 }}
@@ -333,7 +330,7 @@ export function About() {
             />
           </div>
 
-          {/* Marquee 2: Workflow */}
+          {/* Marquee 3: Workflow */}
           <div className="text-center mb-1">
             <h3 className="text-sm uppercase tracking-widest text-slate-800">
               Workflow & Tools

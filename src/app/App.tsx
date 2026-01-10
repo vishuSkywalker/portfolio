@@ -5,7 +5,7 @@ import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import { motion } from "framer-motion";
 
 export default function App() {
   return (
@@ -22,14 +22,14 @@ export default function App() {
         <motion.footer
           className="bg-slate-900 text-white py-8"
           initial={{ opacity: 1 }}
-          whileInView={{ opacity: 1 }} // Trigger animation when visible
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true }} // Optional: Ensures animation runs only once
+          viewport={{ once: true }}
         >
           <div className="container mx-auto px-6 text-center">
             <motion.p
               initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }} // Trigger animation when visible
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
