@@ -1,10 +1,11 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Toaster } from 'sonner';
-import { Navigation } from './components/Navigation';
-import { Home } from './components/Home';
-import { About } from './components/About';
-import { Projects } from './components/Projects';
-import { Contact } from './components/Contact';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Toaster } from "sonner";
+import { Navigation } from "./components/Navigation";
+import { Home } from "./components/Home";
+import { About } from "./components/About";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { motion } from "framer-motion"; // Import motion from framer-motion
 
 export default function App() {
   return (
@@ -18,11 +19,25 @@ export default function App() {
           <Projects />
           <Contact />
         </main>
-        <footer className="bg-slate-900 text-white py-8">
+        <motion.footer
+          className="bg-slate-900 text-white py-8"
+          initial={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }} // Trigger animation when visible
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }} // Optional: Ensures animation runs only once
+        >
           <div className="container mx-auto px-6 text-center">
-            <p>&copy; {new Date().getFullYear()} Vishal Maurya. All rights reserved.</p>
+            <motion.p
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }} // Trigger animation when visible
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+            >
+              &copy; {new Date().getFullYear()} Vishal Maurya. All rights
+              reserved.
+            </motion.p>
           </div>
-        </footer>
+        </motion.footer>
       </div>
     </Router>
   );

@@ -5,3 +5,6 @@
 .h-600 {
   height: 600px;
 }
+button {
+  cursor: pointer;
+}
