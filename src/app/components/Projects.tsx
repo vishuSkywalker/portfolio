@@ -32,7 +32,7 @@ const projects: Project[] = [
     category: "Enterprise Platform",
     description:
       "Enterprise corporate platform featuring dynamic component implementation. Architected a scalable UI library and standardized design tokens.",
-    technologies: ["JavaScript (ES6+)", "Design Tokens", "Performance"],
+    technologies: ["HubSpot CMS", "JavaScript (ES6+)", "Design Tokens", "Performance", "API Integration"],
     imageUrl:
       "https://images.seeklogo.com/logo-png/28/1/tata-communications-company-logo-png_seeklogo-289639.png",
     liveUrl: "https://www.tatacommunications.com",
@@ -44,7 +44,7 @@ const projects: Project[] = [
     category: "Inventory System",
     description:
       "A custom inventory management system powered by HubDB. Features advanced filtering logic for vehicle specifications.",
-    technologies: ["HubSpot CMS", "HubDB", "Serverless Functions"],
+    technologies: ["HubSpot CMS", "HubDB", "JavaScript (ES6+)", "Serverless Functions", "API Integration"],
     imageUrl:
       "https://images.unsplash.com/photo-1591768793355-74d04bb6608f?q=80&w=1472&auto=format&fit=crop",
     liveUrl: "https://www.kenworthne.com/new-trucks",
@@ -52,11 +52,11 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "MASA Seminar",
+    title: "MASA Seminars",
     category: "Event Web App",
     description:
       "A comprehensive event management application handling complex state logic for registrations and dynamic speaker sessions.",
-    technologies: ["React Logic", "State Management", "API Integration"],
+    technologies: ["HubSpot CMS", "Serverless Functions", "JavaScript (ES6+)", "Custom Objects", "API Integration"],
     imageUrl:
       "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1470&auto=format&fit=crop",
     liveUrl: "https://masaseminars.com",
@@ -173,7 +173,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           {!hasGithub && (
             <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm flex items-center gap-1.5">
               <Briefcase size={12} className="text-blue-600" />
-              Client Work
+              Project Lead + Contributer
             </div>
           )}
         </div>
