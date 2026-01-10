@@ -95,7 +95,7 @@ function InfiniteMarquee({
           ) => (
             <span
               key={idx}
-              className="inline-flex items-center rounded-full bg-white border border-slate-200 px-6 py-2 text-sm font-medium text-slate-600 shadow-sm"
+              className="inline-flex items-center rounded-full bg-blue-600 border border-slate-200 px-6 py-2 text-sm font-medium text-white shadow-sm"
             >
               {item}
             </span>
@@ -114,7 +114,7 @@ export function About() {
     offset: ["start end", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [100, -100]); // Parallax effect
+  const y = useTransform(scrollYProgress, [0, 1], [200, -200]); // Parallax effect
 
   const highlights = [
     {
@@ -153,15 +153,14 @@ export function About() {
     "JavaScript (ES6+)", // [cite: 6, 9]
     "Bootstrap", // [cite: 9]
     "Responsive Design", // [cite: 9]
-    "Component Architecture", // [cite: 10]
-    "DOM Manipulation", // [cite: 10]
-    "WCAG Accessibility", // [cite: 10]
-    "Cross-Browser Compatibility", // [cite: 10]
-    "Design Tokens", // [cite: 16]
+    "Component Architecture",
+    "DOM Manipulation",
+    "WCAG Accessibility",
+    "Cross-Browser Compatibility",
+    "Design Tokens",
   ];
 
   const backendSkills = [
-    // Your provided skills
     "Node.js",
     "Express",
     "MongoDB",
@@ -170,21 +169,18 @@ export function About() {
     "GraphQL",
     "Firebase",
     "Serverless Functions",
-
-    // Added from your resume
-    "JSON", //
-    "Custom CRM Objects", // [cite: 12]
-    "Dynamic Modular Themes", // [cite: 12]
+    "JSON",
+    "Custom CRM Objects",
+    "Dynamic Modular Themes",
   ];
 
-  // Suggested additional category based on your "Architecture & Performance" section
   const workflowAndTools = [
-    "Git/GitHub", //
-    "Postman", //
-    "Lighthouse Optimization", // [cite: 10]
-    "Core Web Vitals", // [cite: 6]
-    "Critical Rendering Path", // [cite: 18]
-    "Lazy Loading Strategies", // [cite: 18]
+    "Git/GitHub",
+    "Postman",
+    "Lighthouse Optimization",
+    "Core Web Vitals",
+    "Critical Rendering Path",
+    "Lazy Loading Strategies",
   ];
 
   return (
@@ -232,20 +228,27 @@ export function About() {
                 Senior Front-End Developer | HubSpot Expert | Project Lead
               </p>
               <p className="mt-4">
-                I architect scalable, high-performance web solutions for global enterprise clients. With a background in MERN stack development and HubSpot CMS expertise, I specialize in translating complex business requirements into high-speed technical execution.
+                I architect scalable, high-performance web solutions for global
+                enterprise clients. With a background in MERN stack development
+                and HubSpot CMS expertise, I specialize in translating complex
+                business requirements into high-speed technical execution.
               </p>
               <p className="mt-4">
                 <b>What I bring to the table:</b>
               </p>
               <ul className="list-disc mt-2 pl-5 space-y-2">
                 <li>
-                  <b>Performance Engineering:</b> Expert in cutting page load latency by 30% via Critical Rendering Path optimization.
+                  <b>Performance Engineering:</b> Expert in cutting page load
+                  latency by 30% via Critical Rendering Path optimization.
                 </li>
                 <li>
-                  <b>System Architecture:</b> Creator of framework-agnostic UI component libraries that standardize design across accounts.
+                  <b>System Architecture:</b> Creator of framework-agnostic UI
+                  component libraries that standardize design across accounts.
                 </li>
                 <li>
-                  <b>Complex Integrations:</b> Experienced in building custom API connectors and dynamic HubDB themes that handle thousands of records.
+                  <b>Complex Integrations:</b> Experienced in building custom
+                  API connectors and dynamic HubDB themes that handle thousands
+                  of records.
                 </li>
               </ul>
             </div>
@@ -300,10 +303,10 @@ export function About() {
 
           {/* Marquee 1: Frontend */}
           <div className="text-center mb-1">
-          <h3 className="text-sm uppercase tracking-widest text-slate-800">
+            <h3 className="text-sm uppercase tracking-widest text-slate-800">
               Frontend
             </h3>
-            </div>
+          </div>
           <div className="relative">
             <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-20" />
             <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-20" />
@@ -316,10 +319,10 @@ export function About() {
 
           {/* Marquee 2: Backend */}
           <div className="text-center mb-1">
-           <h3 className="text-sm uppercase tracking-widest text-slate-800">
+            <h3 className="text-sm uppercase tracking-widest text-slate-800">
               Backend
             </h3>
-            </div>
+          </div>
           <div className="relative">
             <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-20" />
             <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-20" />

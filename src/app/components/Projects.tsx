@@ -273,7 +273,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen py-24 px-6 bg-slate-50 overflow-hidden"
+      className="min-h-screen pb-24 px-6 bg-slate-50 overflow-hidden"
       ref={ref}
     >
       <div className="container mx-auto">

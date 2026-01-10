@@ -74,12 +74,14 @@ export function Home() {
   };
 
   const skills = [
-    "React",
-    "TypeScript",
-    "Node.js",
-    "UI/UX Design",
-    "REST APIs",
-    "Responsive Design",
+    "HubSpot CMS (HubL/HubDB)",
+    "React.js & State Management",
+    "JavaScript (ES6+)",
+    "Component Architecture",
+    "Web Performance (Core Web Vitals)",
+    "Node.js & REST APIs",
+    "Technical Leadership",
+    "WCAG Accessibility",
   ];
 
   return (
