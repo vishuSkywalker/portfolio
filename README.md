@@ -52,8 +52,8 @@ This project is open source and available under the MIT License.
 
 For questions or suggestions, please reach out:
 - Email: your.email@example.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/vishumaurya78285)
-- GitHub: [Your GitHub](https://github.com/vishuSkywalker)
+- LinkedIn: (https://linkedin.com/in/vishumaurya78285)
+- GitHub: (https://github.com/vishuSkywalker)
 
 ---
 
