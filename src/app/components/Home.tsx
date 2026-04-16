@@ -23,10 +23,10 @@ const TypewriterText = ({ text }: { text: string }) => {
 
   const container = {
     hidden: { opacity: 0 },
-    visible: (i = 1) => ({
+    visible: {
       opacity: 1,
       transition: { staggerChildren: 0.05, delayChildren: 1.2 },
-    }),
+    },
   };
 
   const child = {

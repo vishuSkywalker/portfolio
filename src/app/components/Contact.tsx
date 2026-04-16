@@ -86,10 +86,18 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const formspreeId = import.meta.env.VITE_FORMSPREE_ID;
+
+    if (!formspreeId) {
+      toast.error("Form configuration error. Please try again later.");
+      return;
+    }
+
     setStatus("submitting");
 
     // Real fetch:
-    const response = await fetch(`https://formspree.io/f/mdaklnoz`, {
+    const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
