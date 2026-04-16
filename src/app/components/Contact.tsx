@@ -36,16 +36,47 @@ export function Contact() {
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
+  const boundsRef = useRef<DOMRect | null>(null);
+
+  const updateBounds = (el: HTMLElement) => {
+    boundsRef.current = el.getBoundingClientRect();
+  };
+
+  function handleMouseEnter(e: React.MouseEvent<HTMLElement>) {
+    updateBounds(e.currentTarget);
+  }
 
   function handleMouseMove({
     currentTarget,
     clientX,
     clientY,
   }: React.MouseEvent) {
-    const { left, top } = currentTarget.getBoundingClientRect();
-    mouseX.set(clientX - left);
-    mouseY.set(clientY - top);
+    if (!boundsRef.current) {
+      updateBounds(currentTarget);
+    }
+    const bounds = boundsRef.current!;
+    mouseX.set(clientX - bounds.left);
+    mouseY.set(clientY - bounds.top);
   }
+
+  // To handle scrolling/resizing while hovering
+  useEffect(() => {
+    const onScrollResize = () => {
+      // If we have a ref to the container, we can update bounds
+      // In this component, currentTarget is the div below.
+      // We'll use a local ref for this specific purpose if needed,
+      // but since we update on every mousemove if bounds are missing,
+      // and we can't easily get the element here without another ref,
+      // we'll just clear the cache on scroll/resize so it's recomputed.
+      boundsRef.current = null;
+    };
+    window.addEventListener("scroll", onScrollResize, true);
+    window.addEventListener("resize", onScrollResize);
+    return () => {
+      window.removeEventListener("scroll", onScrollResize, true);
+      window.removeEventListener("resize", onScrollResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (isInView) {
@@ -245,7 +276,11 @@ export function Contact() {
           </div>
 
           {/* Right Column: Spotlight Form */}
-          <div className="relative group" onMouseMove={handleMouseMove}>
+          <div
+            className="relative group"
+            onMouseEnter={handleMouseEnter}
+            onMouseMove={handleMouseMove}
+          >
             {/* Spotlight Gradient Layer */}
             <motion.div
               className="pointer-events-none absolute -inset-[2px] rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
