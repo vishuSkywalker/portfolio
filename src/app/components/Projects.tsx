@@ -125,18 +125,42 @@ const ProjectCard = ({ project }: { project: Project }) => {
   const shineOpacity = useTransform(mouseY, [-0.5, 0.5], [0, 0.4]);
 
   const hasGithub = Boolean(project.githubUrl);
+  const boundsRef = useRef<DOMRect | null>(null);
+
+  const updateBounds = (el: HTMLElement) => {
+    boundsRef.current = el.getBoundingClientRect();
+  };
+
+  function handleMouseEnter(e: React.MouseEvent<HTMLElement>) {
+    updateBounds(e.currentTarget);
+  }
 
   function handleMouseMove({
     currentTarget,
     clientX,
     clientY,
   }: React.MouseEvent) {
-    const { left, top, width, height } = currentTarget.getBoundingClientRect();
-    const xPct = (clientX - left) / width - 0.5;
-    const yPct = (clientY - top) / height - 0.5;
+    if (!boundsRef.current) {
+      updateBounds(currentTarget);
+    }
+    const bounds = boundsRef.current!;
+    const xPct = (clientX - bounds.left) / bounds.width - 0.5;
+    const yPct = (clientY - bounds.top) / bounds.height - 0.5;
     x.set(xPct);
     y.set(yPct);
   }
+
+  useEffect(() => {
+    const onScrollResize = () => {
+      boundsRef.current = null;
+    };
+    window.addEventListener("scroll", onScrollResize, true);
+    window.addEventListener("resize", onScrollResize);
+    return () => {
+      window.removeEventListener("scroll", onScrollResize, true);
+      window.removeEventListener("resize", onScrollResize);
+    };
+  }, []);
 
   function handleMouseLeave() {
     x.set(0);
@@ -152,6 +176,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       className="perspective-1000"
     >
       <motion.div
+        onMouseEnter={handleMouseEnter}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{
